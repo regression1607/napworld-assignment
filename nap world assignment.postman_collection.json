@@ -1,0 +1,654 @@
+{
+	"info": {
+		"_postman_id": "32e4971d-0753-4367-9661-0778d3904270",
+		"name": "nap world assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33829595",
+		"_collection_link": "https://cyberpoint.postman.co/workspace/Team-Workspace~105cc53c-7639-4a3e-8c3b-6e7d6b648625/collection/33829595-32e4971d-0753-4367-9661-0778d3904270?action=share&source=collection_link&creator=33829595"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Test User\",\n    \"email\": \"testuser@example.com\",\n    \"password\": \"Password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://set-mantis-enabling.ngrok-free.app/api/signup",
+					"protocol": "https",
+					"host": [
+						"set-mantis-enabling",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Test User\",\n    \"email\": \"testuser@example.com\",\n    \"password\": \"Password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://set-mantis-enabling.ngrok-free.app/api/signup",
+							"protocol": "https",
+							"host": [
+								"set-mantis-enabling",
+								"ngrok-free",
+								"app"
+							],
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "339"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 May 2025 14:43:27 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"153-M50kylDnIdhJ9GWjmCJ2dDiMnBQ\""
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "103.211.18.231"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Ratelimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "Ratelimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "Ratelimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "Ratelimit-Reset",
+							"value": "900"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User registered successfully\",\n    \"data\": {\n        \"user\": {\n            \"id\": \"68235a8f81f885d9ae32030c\",\n            \"name\": \"Test User\",\n            \"email\": \"testuser@example.com\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjM1YThmODFmODg1ZDlhZTMyMDMwYyIsImlhdCI6MTc0NzE0NzQwNywiZXhwIjoxNzQ3NzUyMjA3fQ.9TI2zioDuE2UzVgcPLvW1JoxpV8OgOi7ZkB7-XPlGg0\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"testuser@example.com\",\n    \"password\": \"Password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://set-mantis-enabling.ngrok-free.app/api/login",
+					"protocol": "https",
+					"host": [
+						"set-mantis-enabling",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Test User\",\n    \"email\": \"testuser@example.com\",\n    \"password\": \"Password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://set-mantis-enabling.ngrok-free.app/api/signup",
+							"protocol": "https",
+							"host": [
+								"set-mantis-enabling",
+								"ngrok-free",
+								"app"
+							],
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "339"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 May 2025 14:43:27 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"153-M50kylDnIdhJ9GWjmCJ2dDiMnBQ\""
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "103.211.18.231"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Ratelimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "Ratelimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "Ratelimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "Ratelimit-Reset",
+							"value": "900"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User registered successfully\",\n    \"data\": {\n        \"user\": {\n            \"id\": \"68235a8f81f885d9ae32030c\",\n            \"name\": \"Test User\",\n            \"email\": \"testuser@example.com\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjM1YThmODFmODg1ZDlhZTMyMDMwYyIsImlhdCI6MTc0NzE0NzQwNywiZXhwIjoxNzQ3NzUyMjA3fQ.9TI2zioDuE2UzVgcPLvW1JoxpV8OgOi7ZkB7-XPlGg0\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "create post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjM1YThmODFmODg1ZDlhZTMyMDMwYyIsImlhdCI6MTc0NzE0NzQwNywiZXhwIjoxNzQ3NzUyMjA3fQ.9TI2zioDuE2UzVgcPLvW1JoxpV8OgOi7ZkB7-XPlGg0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"postName\": \"My First Test Post\",\n    \"description\": \"This is a detailed description of my first test post for testing the API.\",\n    \"tags\": [\"test\", \"api\", \"postman\"],\n    \"imageUrl\": \"https://example.com/image.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://set-mantis-enabling.ngrok-free.app/api/posts",
+					"protocol": "https",
+					"host": [
+						"set-mantis-enabling",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Test User\",\n    \"email\": \"testuser@example.com\",\n    \"password\": \"Password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://set-mantis-enabling.ngrok-free.app/api/signup",
+							"protocol": "https",
+							"host": [
+								"set-mantis-enabling",
+								"ngrok-free",
+								"app"
+							],
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "339"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 May 2025 14:43:27 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"153-M50kylDnIdhJ9GWjmCJ2dDiMnBQ\""
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "103.211.18.231"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Ratelimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "Ratelimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "Ratelimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "Ratelimit-Reset",
+							"value": "900"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User registered successfully\",\n    \"data\": {\n        \"user\": {\n            \"id\": \"68235a8f81f885d9ae32030c\",\n            \"name\": \"Test User\",\n            \"email\": \"testuser@example.com\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjM1YThmODFmODg1ZDlhZTMyMDMwYyIsImlhdCI6MTc0NzE0NzQwNywiZXhwIjoxNzQ3NzUyMjA3fQ.9TI2zioDuE2UzVgcPLvW1JoxpV8OgOi7ZkB7-XPlGg0\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjM1YThmODFmODg1ZDlhZTMyMDMwYyIsImlhdCI6MTc0NzE0NzQwNywiZXhwIjoxNzQ3NzUyMjA3fQ.9TI2zioDuE2UzVgcPLvW1JoxpV8OgOi7ZkB7-XPlGg0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"postName\": \"My First Test Post\",\n    \"description\": \"This is a detailed description of my first test post for testing the API.\",\n    \"tags\": [\"test\", \"api\", \"postman\"],\n    \"imageUrl\": \"https://example.com/image.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://set-mantis-enabling.ngrok-free.app/api/posts",
+					"protocol": "https",
+					"host": [
+						"set-mantis-enabling",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Test User\",\n    \"email\": \"testuser@example.com\",\n    \"password\": \"Password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://set-mantis-enabling.ngrok-free.app/api/signup",
+							"protocol": "https",
+							"host": [
+								"set-mantis-enabling",
+								"ngrok-free",
+								"app"
+							],
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "339"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 May 2025 14:43:27 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"153-M50kylDnIdhJ9GWjmCJ2dDiMnBQ\""
+						},
+						{
+							"key": "Ngrok-Agent-Ips",
+							"value": "103.211.18.231"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Ratelimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "Ratelimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "Ratelimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "Ratelimit-Reset",
+							"value": "900"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User registered successfully\",\n    \"data\": {\n        \"user\": {\n            \"id\": \"68235a8f81f885d9ae32030c\",\n            \"name\": \"Test User\",\n            \"email\": \"testuser@example.com\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjM1YThmODFmODg1ZDlhZTMyMDMwYyIsImlhdCI6MTc0NzE0NzQwNywiZXhwIjoxNzQ3NzUyMjA3fQ.9TI2zioDuE2UzVgcPLvW1JoxpV8OgOi7ZkB7-XPlGg0\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
