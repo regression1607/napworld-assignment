@@ -1,0 +1,14 @@
+{"level":"info","message":"Server running on port 3000","service":"content-api","timestamp":"2025-05-13 19:44:33"}
+{"0":"c","1":"o","10":"O","11":"N","12":"N","13":"R","14":"E","15":"F","16":"U","17":"S","18":"E","19":"D","2":"n","20":" ","21":":","22":":","23":"1","24":":","25":"2","26":"7","27":"0","28":"1","29":"7","3":"n","30":",","31":" ","32":"c","33":"o","34":"n","35":"n","36":"e","37":"c","38":"t","39":" ","4":"e","40":"E","41":"C","42":"O","43":"N","44":"N","45":"R","46":"E","47":"F","48":"U","49":"S","5":"c","50":"E","51":"D","52":" ","53":"1","54":"2","55":"7","56":".","57":"0","58":".","59":"0","6":"t","60":".","61":"1","62":":","63":"2","64":"7","65":"0","66":"1","67":"7","7":" ","8":"E","9":"C","level":"error","message":"Error connecting to MongoDB:","service":"content-api","timestamp":"2025-05-13 19:45:03"}
+{"level":"info","message":"Server running on port 3000","service":"content-api","timestamp":"2025-05-13 20:04:31"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"content-api","timestamp":"2025-05-13 20:04:31"}
+{"level":"info","message":"Server running on port 3000","service":"content-api","timestamp":"2025-05-13 20:11:40"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"content-api","timestamp":"2025-05-13 20:11:40"}
+{"email":"testuser@example.com","level":"info","message":"Signup attempt","service":"content-api","timestamp":"2025-05-13 20:13:27"}
+{"email":"testuser@example.com","level":"info","message":"User registered successfully","service":"content-api","timestamp":"2025-05-13 20:13:27","userId":"68235a8f81f885d9ae32030c"}
+{"email":"testuser@example.com","level":"info","message":"Login attempt","service":"content-api","timestamp":"2025-05-13 20:14:40"}
+{"email":"testuser@example.com","level":"info","message":"User logged in successfully","service":"content-api","timestamp":"2025-05-13 20:14:40","userId":"68235a8f81f885d9ae32030c"}
+{"level":"info","message":"Post creation attempt","postName":"My First Test Post","service":"content-api","timestamp":"2025-05-13 20:16:21","userId":"68235a8f81f885d9ae32030c"}
+{"level":"info","message":"Post created successfully","postId":"68235b3d81f885d9ae320310","service":"content-api","timestamp":"2025-05-13 20:16:21","userId":"68235a8f81f885d9ae32030c"}
+{"level":"info","limit":10,"message":"Fetching posts with filters","page":1,"searchText":"test","service":"content-api","tags":["api","postman"],"timestamp":"2025-05-13 20:18:07"}
+{"count":1,"level":"info","limit":10,"message":"Posts fetched successfully","page":1,"service":"content-api","timestamp":"2025-05-13 20:18:07","totalPosts":1}
